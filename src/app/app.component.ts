@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Login';
+  username =''
+  password=''
+
+  login(){
+    console.log(this.username+"  "+this.password)
+  }
 }
