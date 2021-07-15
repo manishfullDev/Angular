@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'Login';
   username =''
   password=''
+  password1=''
 
   login(){
     console.log(this.username+"  "+this.password)
