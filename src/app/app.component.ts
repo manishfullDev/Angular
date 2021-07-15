@@ -7,10 +7,12 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'Login';
+  //component property
   username =''
   password=''
   password1=''
 
+  //componenet event
   login(){
     console.log(this.username+"  "+this.password)
   }
