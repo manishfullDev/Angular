@@ -10,10 +10,17 @@ export class AppComponent {
   //component property
   username =''
   password=''
-  password1=''
+  success=false
+  message=''
 
   //componenet event
   login(){
-    console.log(this.username+"  "+this.password)
+    if(this.username=="manish" && this.password=="1234"){
+      this.success=true
+      this.message='login successfully'
+    }else{
+       this.success=true
+        this.message='plz check your credentials'
+    }
   }
 }

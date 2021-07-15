@@ -1,5 +1,8 @@
 <form>
   username<input type="text" name="username" [(ngModel)]="username" >
   password<input type="text" name="password" [(ngModel)]="password">
-</form>git 
+</form> 
 <button (click)="login()">Submit</button>
+
+
+<h1 *ngIf="success">{{message}}</h1>
